@@ -17,7 +17,7 @@
  set number
 
  " Highlight cursor line underneath the cursor horizontally.
-" set cursorline
+ "set cursorline
 
  " Highlight cursor line underneath the cursor vertically.
  set cursorcolumn
@@ -66,17 +66,27 @@ set hlsearch
 set history=1000
 
 "Try to dissable starting with replace mode enabled by default
-"set ambw=double
+set ambw=double
 set t_u7=
 
-"AUTO COMPLETION
+
 
 " Enable auto completion menu after pressing TAB.
 set wildmenu
 
 " Make wildmenu behave like similar to Bash completion.
  set wildmode=list:longest
-
+"
 " There are certain files that we would never want to edit with Vim.
-" Wildmenu will ignore files with these extensions.
+" " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+"folding
+set foldenable
+"set foldmethod = syntax
+"set foldmethod = indent
+"et foldnestmax = 2
+"set foldcolumn = 10
+"set foldlevel = 1
+"set foldopen = all
+syn region Comment start=/'''/ end=/'''/
